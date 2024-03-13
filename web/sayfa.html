@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mert Kaan Güneş Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1c2951;
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #ffffff !important;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #ffffff;
+    }
+
+    /* Main Page Section */
+    .main-page {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .main-page h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+
+    .main-page p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Software Developer Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#communication">Communication</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Page -->
+  <div class="container main-page">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm a software developer passionate about creating innovative solutions.</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="container mt-5">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="communication-tab" data-toggle="tab" href="#communication" role="tab" aria-controls="communication" aria-selected="false">Communication</a>
+      </li>
+    </ul>
+    <div class="tab-content mt-4" id="myTabContent">
+      <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>I have always been interested in computers and science. Even before I was literate. I belive in lifelong learning and I love learning new stuff. People around me generally love me because they say that I am a easy to get on well person. That's why I don't have hard time to build healty/non-toxic buisness realationships.I belive It's mandotory for me to be benefical to the group that I become a part of. You can say that the biggest dream of mine is becoming a computer engineer which skilfull, good and "cool".</p>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>Here are some of my projects showcasing my skills.</p>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="communication" role="tabpanel" aria-labelledby="communication-tab">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Feel free to get in touch with me for anything.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
