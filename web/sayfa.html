@@ -51,20 +51,23 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Software Developer Portfolio</a>
+      <a class="navbar-brand" href="#">Mert Kaan Güneş</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link active" id="main-page-tab" data-toggle="tab" href="#main-page-content" role="tab" aria-controls="main-page-content" aria-selected="true">Main Page</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#communication">Communication</a>
+            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="communication-tab" data-toggle="tab" href="#communication" role="tab" aria-controls="communication" aria-selected="false">Communication</a>
           </li>
         </ul>
       </div>
@@ -72,26 +75,15 @@
   </nav>
 
   <!-- Main Page -->
-  <div class="container main-page">
-    <h1>Welcome to My Portfolio</h1>
-    <p>I'm a software developer passionate about creating innovative solutions.</p>
+  <div class="container main-page tab-pane fade show active" id="main-page-content" role="tabpanel" aria-labelledby="main-page-tab">
+    <h1 style="color:black;">Selam, I'm Mert.</h1>
+    <p>I'm a Computer engineering student who loves computers. :)</p>
   </div>
 
   <!-- Tabs -->
   <div class="container mt-5">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="communication-tab" data-toggle="tab" href="#communication" role="tab" aria-controls="communication" aria-selected="false">Communication</a>
-      </li>
-    </ul>
-    <div class="tab-content mt-4" id="myTabContent">
-      <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
         <div class="container">
           <h2>About Me</h2>
           <p>I have always been interested in computers and science. Even before I was literate. I belive in lifelong learning and I love learning new stuff. People around me generally love me because they say that I am a easy to get on well person. That's why I don't have hard time to build healty/non-toxic buisness realationships.I belive It's mandotory for me to be benefical to the group that I become a part of. You can say that the biggest dream of mine is becoming a computer engineer which skilfull, good and "cool".</p>
@@ -100,16 +92,22 @@
       <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
         <div class="container">
           <h2>Projects</h2>
-          <p>Here are some of my projects showcasing my skills.</p>
+          <p>Here are some of my projects showcasing my skills. Mert-Gunes github</p>
         </div>
       </div>
       <div class="tab-pane fade" id="communication" role="tabpanel" aria-labelledby="communication-tab">
         <div class="container">
           <h2>Contact Me</h2>
-          <p>Feel free to get in touch with me for anything.</p>
+          <p>Feel free to get in touch with me for anything. instargram: @mergunesh gmail:21060611@stu.omu.edu.tr github: Mert-Gunes
+          </p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
